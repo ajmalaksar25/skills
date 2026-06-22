@@ -15,7 +15,7 @@ Produce **two** things, every time:
 
 - **Reuse an existing doc.** Look for a prior handoff for this work (default: OS temp dir, `handoff-<slug>.md`). If one exists and isn't too large (~600 lines), **update it in place** — add a dated `## Update` section and refresh the status table; don't rewrite history. Only create a new file when the existing one is too large, and then link back to the prior doc(s) at the top.
 - **Capture digressions.** Record the original issue *and* every direction the work branched into, with a one-line note on why each branch matters. Don't drop side-threads.
-- **Carry over engineering guidelines.** Pull from repo docs (CLAUDE.md, CONTRIBUTING, docs/) by reference, and inline any rules or instructions the user gave verbally during this conversation.
+- **Carry over engineering guidelines.** Pull from repo docs by reference — agent instruction files (`AGENTS.md`, `CLAUDE.md`, `.cursor/rules`, `.github/copilot-instructions.md`, or whatever this agent uses), plus `CONTRIBUTING`, `docs/` — and inline any rules or instructions the user gave verbally during this conversation.
 - **Don't duplicate artifacts.** Reference PRDs, plans, ADRs, issues, commits, and diffs by path or URL — never paste their content.
 - **Redact** API keys, passwords, tokens, and PII.
 
@@ -56,7 +56,7 @@ Loose ends, unanswered questions, ideas to investigate.
 Paths/URLs to PRDs, plans, ADRs, issues, key files.
 
 ## Suggested skills
-Skills the next agent should invoke, and when.
+Skills or tools the next agent should invoke, and when. Skip if its agent has none.
 ```
 
 When updating an existing doc, append:
